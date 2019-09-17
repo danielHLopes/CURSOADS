@@ -10,21 +10,26 @@
     margin: 0 auto;
   }
 /*cabecalho*/
-@media(max-width: 600px){
 
-}
   .cabecalho{
       background-color: #117A25;
       color: #F2F2F2;
-      padding-top: 10px;
-      padding-bottom: 20px;
       padding: 68px 0 10px;
+  }
+  @media(max-width: 600px){
+    .cabecalho{
+      padding: 0;
+      padding-top: 20px
+    }
   }
   .cabecalho__img{
     width: 36px;
     height: 27px;
-
+    margin-left: 30px;
   }
+.cabecalho__mbl{
+  display: flex;
+}
 
   .cabecalho__titulo1{
       font-size: 16px;
@@ -69,20 +74,25 @@
 
   /*secções*/
 
-  .main{
+  main{
     display: flex;  
-    
-    
+  }
+
+  @media(max-width:600px){
+    main{
+      display: inline;
+    }
+
   }
 
   @media(min-width: 600px){
     .titulosec{
-      width: 667px;
+      width: 572px;
     }
     .textosec{
-      width: 667px;;
+      width: 572px;
+      margin-right: 200px;
     }
-
     
   }
 
@@ -100,6 +110,7 @@
     margin: auto 20px;
     padding:0;
     line-height: 19px;
+    
   }
 
   /*lista*/
@@ -131,6 +142,10 @@
   padding: 20px;
 }
 
+
+
+
+
 /*coordenador*/
 .coordenador{
   text-align: center;
@@ -139,7 +154,7 @@
 .coordenador__titulo{
   font-size: 24px;
   color: #00420C;
-  margin: 20px;
+  margin: 20px 0;
 }
 .coordenador__img{
   width: 172px;
@@ -149,8 +164,16 @@
 .coordenador__nome{
   font-size: 18px;
   color: #00420C;
-  margin: 20px;
+  margin: 20px 0;
 }
+
+@media(min-width:600px){
+  .coordenador{
+    text-align: left;
+  }
+}
+
+
 /*footer*/
 .footer{
   text-align: center;
@@ -165,6 +188,19 @@
 .footer__texto{
   color: white;
   font-size: 18px;
-  font-weight: bold;
   margin: 20px;
+  display: block;
+  text-align: left;
+}
+.footer_campus{
+  font-weight: bold;
+}
+
+.footer__org{
+  display: flex;
+}
+@media(max-width:600px){
+  .footer__org{
+    display: inline;
+  }
 }
