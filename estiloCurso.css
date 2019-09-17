@@ -5,38 +5,107 @@
     font-family: 'Roboto', sans-serif;
     
   }
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 /*cabecalho*/
+@media(max-width: 600px){
+
+}
   .cabecalho{
       background-color: #117A25;
       color: #F2F2F2;
       padding-top: 10px;
       padding-bottom: 20px;
+      padding: 68px 0 10px;
+  }
+  .cabecalho__img{
+    width: 36px;
+    height: 27px;
 
   }
+
   .cabecalho__titulo1{
       font-size: 16px;
       margin: auto 20px;
+      padding: 5px;
 
   }
   .cabecalho__titulo2{
       font-size: 24px;
       margin: auto 20px;
+      line-height: 28px;
   }
+@media(min-width: 600px){
+  .cabecalho__img{
+    display: none;
+  }
+}
+
+
+  /*menu*/
+  @media(max-width: 600px){
+    .menu{
+      display: none;
+    }
+  }
+  .menu{
+    list-style: none;
+    flex-direction: row;
+    background-color: #00420C;
+}
+.menu__caixa{
+  display: flex;
+}
+.menu__item >a{
+    
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+    color: white;
+}
+
 
   /*secções*/
+
+  .main{
+    display: flex;  
+    
+    
+  }
+
+  @media(min-width: 600px){
+    .titulosec{
+      width: 667px;
+    }
+    .textosec{
+      width: 667px;;
+    }
+
+    
+  }
+
+
+
+
   .titulosec{
       color: #00420C;
-      text-align: center;
+      padding: 20px;
       font-size: 24px;
-  }
+      margin: 60px 0px 0px;
+ }
   .textosec{   
     font-size: 16px;
     margin: auto 20px;
+    padding:0;
+    line-height: 19px;
   }
 
   /*lista*/
   .lista__item{
    margin: auto 30px;
+   line-height: 19px;
   }
 
 
@@ -44,8 +113,58 @@
 .conceito{
     background-color: #117A25;
     border-radius: 5px;
+    width: 313px;
+    height: 159px;
+    padding: 30px;
+    margin: 60px  auto 0;
 }
 .conceito__titulo{
     text-align: center;
     font-size: 22px;
+    color: white;
+}
+.conceito__nota{
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  font-size: 38px;
+  padding: 20px;
+}
+
+/*coordenador*/
+.coordenador{
+  text-align: center;
+  margin: 60px 0px 0px;
+}
+.coordenador__titulo{
+  font-size: 24px;
+  color: #00420C;
+  margin: 20px;
+}
+.coordenador__img{
+  width: 172px;
+  border: 2px solid #00420C;;
+  border-radius: 5px;
+}
+.coordenador__nome{
+  font-size: 18px;
+  color: #00420C;
+  margin: 20px;
+}
+/*footer*/
+.footer{
+  text-align: center;
+  background-color: #00420C;
+  padding: 20px;
+  margin: 60px 0px 0px;
+}
+.footer__img{
+  width: 95px;
+  height: 114px;
+}
+.footer__texto{
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px;
 }
