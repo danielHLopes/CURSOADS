@@ -2,56 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    
     <title>Site curso</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estiloCurso.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header class="cabecalho">
-        <h1 class="cabecalho__titulo1">
-            Curso Superior de Tecnologia em
-        </h1>
-        <h2 class="cabecalho__titulo2">
-            Análise e Desenvolvimento de Sistemas
-        </h2>
-    </header>
-
-    <main>
-        <section>
-            <h1 class="titulosec">Perfil profissional de conclusão</h1>
-
-            <p class="textosec">
-                Analisa, projeta, desenvolve, testa, implanta e mantém sistemas computacionais de informação. Avalia, seleciona, especifica e utiliza metodologias, tecnologias e ferramentas da Engenharia de Software, linguagens de programação e bancos de dados. Coordena equipes de produção de softwares. Vistoria, realiza perícia, avalia, emite laudo e parecer técnico em sua área de formação
-            </p>
-        </section>
-
-        <section>
-            <h1 class="titulosec">Campo de atuação</h1>
-
-            <p class="textosec">Empresas de planejamento, desenvolvimento de projetos, assistência técnica e consultoria. Empresas de tecnologia. Empresas em geral (indústria, comércio e serviços). Organizações não-governamentais. Órgãos públicos. Institutos e Centros de Pesquisa. Instituições de Ensino, mediante formação requerida pela legislação vigente.</p>
-        </section>
-
-        <section>
-            <h1 class="titulosec">Processo seletivo</h1>
-            <ul>
-                <p class="textosec">Entrada anual:</p> 
-                <li class="lista__item">20 vagas através da nota do ENEM</li>
-                <li class="lista__item">20 vagas através da nota do Ensino Médio</li>
-            </ul>
+        <div class="container">
+            <img class="cabecalho__img" src="assets/images/índice.svg" alt="menu hamburguer">
             
-        </section>
-
-        <section>
-            <div class="conceito">
-                <div class="conceito__titulo">Conceito do Curso</div>
+            <h1 class="cabecalho__titulo1">
+                Curso Superior de Tecnologia em
+            </h1>
+            <h2 class="cabecalho__titulo2">
+                Análise e Desenvolvimento de Sistemas
+            </h2>
+        </div>
+        
+    </header>
+    <nav>
+        <ul class="menu">
+            <div class="menu__caixa container">
+                <li class="menu__item"> <a href="#">Inicio</a> </li>
+                <li class="menu__item"> <a href="#">Disciplinas</a> </li>
+                <li class="menu__item"> <a href="#">Professores</a> </li>
+                <li class="menu__item"> <a href="#">Contato</a> </li>
             </div>
-        </section>
+        </ul>
+    </nav>
 
+
+    <main class="main container">
+        <div>
+            <section class="container">
+                <h1 class="titulosec">Perfil profissional de conclusão</h1>
+
+                <p class="textosec">
+                    Analisa, projeta, desenvolve, testa, implanta e mantém sistemas computacionais de informação. Avalia, seleciona, especifica e utiliza metodologias, tecnologias e ferramentas da Engenharia de Software, linguagens de programação e bancos de dados. Coordena equipes de produção de softwares. Vistoria, realiza perícia, avalia, emite laudo e parecer técnico em sua área de formação
+                </p>
+            </section>
+
+            <section class="container">
+                <h1 class="titulosec">Campo de atuação</h1>
+
+                <p class="textosec">Empresas de planejamento, desenvolvimento de projetos, assistência técnica e consultoria. Empresas de tecnologia. Empresas em geral (indústria, comércio e serviços). Organizações não-governamentais. Órgãos públicos. Institutos e Centros de Pesquisa. Instituições de Ensino, mediante formação requerida pela legislação vigente.</p>
+            </section>
+
+            <section class="container">
+                <h1 class="titulosec">Processo seletivo</h1>
+                <ul>
+                    <p class="textosec">Entrada anual:</p> 
+                    <li class="lista__item">20 vagas através da nota do ENEM</li>
+                    <li class="lista__item">20 vagas através da nota do Ensino Médio</li>
+                </ul>
+            </section>
+        </div>
+        <div>
+            <section >
+                <div class="conceito">
+                    <div class="conceito__titulo">Conceito do Curso</div>
+                    <div class="conceito__nota">4</div>
+                </div>
+            </section>
+
+            <section class="coordenador">
+                <div class="coordenador__titulo">Coordenador</div>
+                <img class="coordenador__img" src="juliano.jpg" alt="Coordenador da disciplina">
+                <div class="coordenador__nome">Prof.º Juliano Fisher Naves</div>
+            </section>
+        </div>
+
+        
 
     </main>
+    <footer class="footer">
+        <div class="container">
+            <img class="footer__img" src="logoifro.gif" alt="logo da instituição">
+            <p class="footer__texto">IFRO Campus Vilhena
+                Endereço: Rodovia BR-174, Km 3 S/n Zona Urbana, Vilhena - RO, 76980-000
+                Telefone: (69) 2101-0700
+            </p>
+        </div>
+            
+
+    </footer>
 
 
 
