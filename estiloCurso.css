@@ -74,16 +74,16 @@
   background-color: rgb(62, 143, 77);
 }
 
-  /*secções--------------------------------------------------------------------*/
+  /*secções-----------------------------------------------------------------------------------------------------------------------------*/
 
   .main{
     display: flex;  
   }
-  /*parte lado direito----------------------------------------------------------*/
+  
 .quebra{
   padding-left: 80px;
 }
-
+  /*parte lado direito----------------------------------------------------------*/
   @media(max-width:600px){
     .main{
       display: inline;
@@ -128,14 +128,13 @@
    line-height: 19px;
   }
 
-
+  
 
 /*conceito-------------------------------------------------------------------*/
 .conceito{
     background-color: #117A25;
     border-radius: 5px;
-    width: 313px;
-    height: 159px;
+    width: 130%;
     padding: 30px;
     margin: 60px  auto 0;
 }
@@ -152,11 +151,18 @@
   padding: 20px;
 }
 
-
+@media(max-width: 600px){
+  .conceito{
+    width: 313px;
+    height: 159px;
+  }
+}
 
 
 
 /*coordenador----------------------------------------------------*/
+
+
 .coordenador{
   text-align: center;
   margin: 60px 0px 0px;
@@ -184,7 +190,11 @@
 }
 
 
-/*footer----------------------------------------------------*/
+
+
+
+
+/*footer---------------------------------------------------------------------------------------------------------------------------------------*/
 .footer{
   text-align: center;
   background-color: #00420C;
@@ -220,24 +230,44 @@
 /*tabela pagina 2*/
 .table{
   width: 100%;
-  border: 1px solid #000000;
   border-collapse: collapse;
   
 }
 .table tr{
-  
-  
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  border-collapse: collapse;
 }
 
 .table td{
-  width: 90%;
   border: 1px solid #000000;
   border-collapse: collapse;
-  
 }
 .table th{
   background: #E5E5E5;
-
   border: 1px solid #000000;
   border-collapse: collapse;
+
+  
+}
+
+.titulotable{
+  color: #00420C;
+  padding: 20px;
+  font-size: 36px;
+  margin: 60px 0px 0px;
+}
+
+@media(max-width:600px){
+  .titulotable{
+    font-size: 24px;
+  }
+  .table{
+    width: 90%;
+  }
+  .table tr{
+    display: inline;
+  }
+  
 }
