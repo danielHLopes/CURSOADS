@@ -49,7 +49,7 @@
 }
 
 
-  /*menu*/
+  /*menu----------------------------------------------------------------------*/
   @media(max-width: 600px){
     .menu{
       display: none;
@@ -70,27 +70,36 @@
     display: block;
     color: white;
 }
+.menu__item:hover{
+  background-color: rgb(62, 143, 77);
+}
 
+  /*secções--------------------------------------------------------------------*/
 
-  /*secções*/
-
-  main{
+  .main{
     display: flex;  
   }
+  /*parte lado direito----------------------------------------------------------*/
+.quebra{
+  padding-left: 80px;
+}
 
   @media(max-width:600px){
-    main{
+    .main{
       display: inline;
+    }
+    .quebra{
+      padding-left: 0;
     }
 
   }
 
   @media(min-width: 600px){
     .titulosec{
-      width: 572px;
+      width: 667px;
     }
     .textosec{
-      width: 572px;
+      width: 667px;
       margin-right: 200px;
     }
     
@@ -113,14 +122,15 @@
     
   }
 
-  /*lista*/
+  /*lista-------------------------------------------------------------------*/
   .lista__item{
    margin: auto 30px;
    line-height: 19px;
   }
 
 
-/*conceito*/
+
+/*conceito-------------------------------------------------------------------*/
 .conceito{
     background-color: #117A25;
     border-radius: 5px;
@@ -146,7 +156,7 @@
 
 
 
-/*coordenador*/
+/*coordenador----------------------------------------------------*/
 .coordenador{
   text-align: center;
   margin: 60px 0px 0px;
@@ -174,7 +184,7 @@
 }
 
 
-/*footer*/
+/*footer----------------------------------------------------*/
 .footer{
   text-align: center;
   background-color: #00420C;
@@ -203,4 +213,31 @@
   .footer__org{
     display: inline;
   }
+}
+
+
+
+/*tabela pagina 2*/
+.table{
+  width: 100%;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  
+}
+.table tr{
+  
+  
+}
+
+.table td{
+  width: 90%;
+  border: 1px solid #000000;
+  border-collapse: collapse;
+  
+}
+.table th{
+  background: #E5E5E5;
+
+  border: 1px solid #000000;
+  border-collapse: collapse;
 }
